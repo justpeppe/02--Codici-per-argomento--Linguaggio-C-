@@ -1,0 +1,13 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "/home/giuseppe-trimarchi/Scrivania/01) Fondamenti di informatica"
+            ],
+            "defines": []
+        }
+    ],
+    "version": 4
+}
