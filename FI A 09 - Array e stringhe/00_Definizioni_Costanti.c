@@ -2,10 +2,16 @@
 #include <stdio.h>
 #include <math.h>
 
+
 // Come si definiscono le costanti in C? 
 // Utilizziamo il comando #define per definire le costanti
 // Definiziamo la costante PiGreco
 #define PI 3.14159 
+
+
+// Possiamo utilizzare anche const per definire le costanti
+// Definizione di una costante con const
+const float PI2 = 3.14159; 
 
 
 int main() {
