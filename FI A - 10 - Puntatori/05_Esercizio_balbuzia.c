@@ -17,7 +17,7 @@ int main() {
 
     // Ciclo while di ripetizione
     while (*puntatore_input != '\0') {
-        *puntatore_output++ = *puntatore_input; // prima copiamo l'elemento e poi incrementiamo la posizione
+        *puntatore_output++ = *puntatore_input; // prima copiamo l'elemento e poi avviene l'incremento della posizione
         *puntatore_output++ = *puntatore_input;
         *puntatore_output++ = *puntatore_input++;
     }
