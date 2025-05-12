@@ -4,7 +4,7 @@
 
 int main() {
 
-    // Creiamo due vettori uno di 3 e l'altro di 2 interi con malloc
+    // Creiamo due vettori uno di 3 e l'altro di 2 interi con malloc (esso permette di evitare spreco di memoria)
     int *vettoreA = NULL;
     vettoreA = (int *)malloc(3*sizeof(int));
     int *vettoreB = NULL;
