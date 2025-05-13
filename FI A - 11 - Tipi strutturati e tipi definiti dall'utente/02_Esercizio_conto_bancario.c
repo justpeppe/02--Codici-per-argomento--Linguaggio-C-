@@ -30,10 +30,12 @@ int main() {
     // Verifichiamo le condizioni
     if (strcmp(input_username, conto1.username) == 0 && strcmp(input_password, conto1.password) == 0) {
         printf("Accesso effettuato con successo!\n");
-        printf("Scegli una tra queste operazioni:\n01) Vedi saldo\n02) Preleva\n03) Deposita\n");
-        int scelta;
+        int scelta = 0;
+        while(scelta != 4) {
+        printf("Scegli una tra queste operazioni:\n01) Vedi saldo\n02) Preleva\n03) Deposita \n04)Esci\n");
+        
         scanf("%d", &scelta);
-
+        
         switch (scelta) {
             case 1:
                 printf("Il tuo saldo è: %.2f\n", conto1.saldo);
@@ -56,9 +58,14 @@ int main() {
                 conto1.saldo = conto1.saldo + deposito;
                 printf("Deposito effettuato. Nuovo saldo: %.2f\n", conto1.saldo);
                 break;
+            case 4:
+                printf("Uscita effettuata correttamente");
+                break;
+
             default:
                 printf("Operazione non valida.\n");
         }
+    }
     } else {
         printf("Nome utente o password errati.\n");
     }
